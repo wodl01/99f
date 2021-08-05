@@ -124,7 +124,7 @@ public class RandomBoxScript : MonoBehaviour
 
     private void Update()
     {
-        if (canInteract && !itemOut && Input.GetKeyDown(KeyCode.F))
+        if (canInteract && !isOpen && Input.GetKeyDown(KeyCode.F))
         {
             isOpen = true;
             //spriteRenderer.sprite = offSprite;
@@ -173,7 +173,7 @@ public class RandomBoxScript : MonoBehaviour
             Debug.Log("·¹Àü");
         }
 
-        //itemSpriteRenderer.sprite = itemInfoManager.ItemInfos[selectedItemCode].ItemShape;
+        itemSpriteRenderer.sprite = itemInfoManager.ItemInfos[selectedItemCode].ItemShape;
         itemObject.SetActive(true);
         boxAnimator.SetBool("Open", true);
     }

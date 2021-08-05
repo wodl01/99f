@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemInfoManager : MonoBehaviour
 {
     public PlayerState playerState;
+    [SerializeField] InventoryManager inventory;
 
     [System.Serializable]
     public class Items
@@ -46,5 +47,6 @@ public class ItemInfoManager : MonoBehaviour
     public void SellItem(int ItemCode)
     {
         playerState.gold += ItemInfos[ItemCode].SellPrice;
+        inventory.goldAmountText.text = playerState.gold.ToString() + "G";
     }
 }

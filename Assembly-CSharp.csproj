@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\RandomBoxScript.cs" />
     <Compile Include="Assets\Scripts\EffectManager.cs" />
     <Compile Include="Assets\Scripts\PoolManager.cs" />
+    <Compile Include="Assets\InventoryManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
