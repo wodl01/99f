@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BulletScript.cs" />
     <Compile Include="Assets\Scripts\ItemInfoManager.cs" />
+    <Compile Include="Assets\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Enemy1.cs" />
     <Compile Include="Assets\Scripts\PlayerState.cs" />
     <Compile Include="Assets\Scripts\InteractionScript.cs" />
@@ -64,7 +65,7 @@
     <Compile Include="Assets\Scripts\RandomBoxScript.cs" />
     <Compile Include="Assets\Scripts\EffectManager.cs" />
     <Compile Include="Assets\Scripts\PoolManager.cs" />
-    <Compile Include="Assets\InventoryManager.cs" />
+    <Compile Include="Assets\EnemyHitBoxScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -24,10 +24,12 @@ public class PlayerState : MonoBehaviour
 
     [Header("Player State")]
     public float attackSpeedPer;
+    public float dmg;
     public float bulletAmount;
     public float bulletSumAngle;
     public float bulletSpeedPer;
     public float bulletRangePer;
+    public int missPer;
 
     private void Awake()
     {

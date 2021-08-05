@@ -267,6 +267,36 @@ public class RandomBoxScript : MonoBehaviour
             }
         }
 
+        if (itemInfoManager.ItemInfos[selectedItemCode].SumAngle != 0)
+        {
+            bool input = false;
+            for (int i = 0; i < itemNormalOptionTexts.Length; i++)
+            {
+                if (!itemNormalOptionTexts[i].gameObject.activeSelf && !input)
+                {
+                    itemNormalOptionTexts[i].text = "ÅºÆÛÁü " + itemInfoManager.ItemInfos[selectedItemCode].SumAngle;
+                    itemNormalOptionTexts[i].gameObject.SetActive(true);
+                    input = true;
+
+                }
+            }
+        }
+
+        if (itemInfoManager.ItemInfos[selectedItemCode].MissPer != 0)
+        {
+            bool input = false;
+            for (int i = 0; i < itemNormalOptionTexts.Length; i++)
+            {
+                if (!itemNormalOptionTexts[i].gameObject.activeSelf && !input)
+                {
+                    itemNormalOptionTexts[i].text = "È¸ÇÇÈ®·ü" + itemInfoManager.ItemInfos[selectedItemCode].MissPer + "%";
+                    itemNormalOptionTexts[i].gameObject.SetActive(true);
+                    input = true;
+
+                }
+            }
+        }
+
         itemSellPriceText.text = "+" + itemInfoManager.ItemInfos[selectedItemCode].SellPrice.ToString() + "G";
     }
 }
