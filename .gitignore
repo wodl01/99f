@@ -41,3 +41,35 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.propertie
 
+
+Library/Bee/tundra.log.json
+
+Library/Bee/TundraBuildState.state
+
+Library/Bee/TundraBuildState.state.map
+
+Library/EditorInstance.json
+
+Library/PackageManager/ProjectCache
+
+Library/PackageManager/ProjectCache.md5
+
+Library/ScriptAssemblies/Assembly-CSharp.dll
+
+Library/Search/transactions.db
+
+Library/SourceAssetDB
+
+Library/ArtifactDB
+
+Library/Bee/1900b0aE-inputdata.json
+
+Library/Bee/1900b0aE.dag
+
+Library/Bee/1900b0aE.dag_fsmtime
+
+Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll
+
+Library/Bee/profiler.json
+
+Library/Bee/tundra.digestcache
