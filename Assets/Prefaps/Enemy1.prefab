@@ -54,9 +54,10 @@ GameObject:
   - component: {fileID: 1060140486}
   - component: {fileID: 1060140488}
   - component: {fileID: 1060140487}
+  - component: {fileID: 2047532409}
   m_Layer: 0
   m_Name: FindRader
-  m_TagString: GameController
+  m_TagString: Lader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +105,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyBasic: {fileID: 6172136788328338644}
+--- !u!50 &2047532409
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060140485}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1882064969
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,11 +285,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6706e6e12f49b9642b94da2b4bcb1082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigid: {fileID: 5732724653141918318}
   curHealth: 0
   maxHealth: 20
   spriteRenderer: {fileID: 7545067102454642646}
   player: {fileID: 0}
   findPlayer: 0
+  actCode: 0
+  freeMoveSpeed: 0.2
+  curMoveCool: 0
+  maxMoveCool: 2
 --- !u!114 &894859443057711267
 MonoBehaviour:
   m_ObjectHideFlags: 0

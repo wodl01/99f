@@ -46,7 +46,7 @@ public class PlayerControlScript : MonoBehaviour
 
     void FarAttack()
     {
-        if (playerState.curShotCoolTime > 0)
+        if (playerState.curShotCoolTime >= 0)
             playerState.curShotCoolTime -= Time.deltaTime;
 
         if (Input.GetKey(KeyCode.UpArrow))

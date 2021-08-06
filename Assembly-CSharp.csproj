@@ -63,9 +63,9 @@
     <Compile Include="Assets\Scripts\PlayerControlScript.cs" />
     <Compile Include="Assets\Scripts\EnemyTargetFindScript.cs" />
     <Compile Include="Assets\Scripts\RandomBoxScript.cs" />
+    <Compile Include="Assets\EnemyHitBoxScript.cs" />
     <Compile Include="Assets\Scripts\EffectManager.cs" />
     <Compile Include="Assets\Scripts\PoolManager.cs" />
-    <Compile Include="Assets\EnemyHitBoxScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

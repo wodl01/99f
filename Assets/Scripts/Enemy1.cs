@@ -15,15 +15,14 @@ public class Enemy1 : MonoBehaviour
     [Header("State")]
     [SerializeField] float speed;
 
-    private void FixedUpdate()
+    public void FireToPlayer()
     {
-        if(enemyBasic.findPlayer)
-        FollowTarget();
+        enemyBasic.canMove = false;
     }
 
-    void FollowTarget()
+    /*void FollowTarget()
     {
         Vector2 followVector = Vector2.MoveTowards(transform.position, enemyBasic.player.transform.position, speed * Time.deltaTime);
         rigid.MovePosition(followVector);
-    }
+    }*/
 }
